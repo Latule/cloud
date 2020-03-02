@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ country }} events</title>
+</head>
+<body>
+
+<p> The country found is {{ country }}</p>
+<p> Upcoming events: </p>
+<ol>
+{% for link in links %}
+    <li> <a href="{{ link }}">{{ link }}</a></li>
+{% endfor %}
+</ol>
+</body>
+</html>
