@@ -1,0 +1,3 @@
+[submodule "Restaurant"]
+	path = cc_tema_2/Restaurant
+	url = https://github.com/Latule/Restaurant.git

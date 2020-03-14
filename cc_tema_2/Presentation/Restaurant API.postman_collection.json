@@ -1,0 +1,575 @@
+{
+	"info": {
+		"_postman_id": "4ae9908b-c704-488c-b44c-accd7e3de139",
+		"name": "Restaurant API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Providers",
+			"item": [
+				{
+					"name": "get all providers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44351/api/Providers",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44351",
+							"path": [
+								"api",
+								"Providers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add provider Morarita",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Maria Morarita\",\r\n  \"ingredients\": [\r\n    {\r\n      \"name\": \"cereale\",\r\n      \"quantity\": 234,\r\n      \"price\": 1.5\r\n    },{\r\n      \"name\": \"griss\",\r\n      \"quantity\": 105,\r\n      \"price\": 0.8\r\n\r\n},\r\n{\r\n      \"name\": \"faina\",\r\n      \"quantity\": 404,\r\n      \"price\": 0.4\r\n}\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44351/api/Providers",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44351",
+							"path": [
+								"api",
+								"Providers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add provider Killer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"killer srl\",\r\n  \"ingredients\": [\r\n    {\r\n      \"name\": \"salam\",\r\n      \"quantity\": 2345,\r\n      \"price\": 3\r\n    },\r\n{\r\n      \"name\": \"carnat\",\r\n      \"quantity\": 404,\r\n      \"price\": 4.5\r\n}\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44351/api/Providers",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44351",
+							"path": [
+								"api",
+								"Providers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add provider engros",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"engros\",\r\n  \"ingredients\": [\r\n    {\r\n      \"name\": \"haine\",\r\n      \"quantity\": 2345,\r\n      \"price\": 10\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44351/api/Providers",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44351",
+							"path": [
+								"api",
+								"Providers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get provider engros",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:44351/api/Providers/86f02146-39fe-4f7f-91be-7509ebb0feed",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44351",
+							"path": [
+								"api",
+								"Providers",
+								"86f02146-39fe-4f7f-91be-7509ebb0feed"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit provider engros",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"engros\",\r\n  \"ingredients\": [\r\n    {\r\n      \"name\": \"haine\",\r\n      \"quantity\": 235,\r\n      \"price\": 13.5\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44351/api/Providers/86f02146-39fe-4f7f-91be-7509ebb0feed",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44351",
+							"path": [
+								"api",
+								"Providers",
+								"86f02146-39fe-4f7f-91be-7509ebb0feed"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete provider engros",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:44351/api/Providers/28486220-179f-45df-ab9d-4c3e713ef195",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44351",
+							"path": [
+								"api",
+								"Providers",
+								"28486220-179f-45df-ab9d-4c3e713ef195"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Stores",
+			"item": [
+				{
+					"name": "get all ingredients from store",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44351/api/Stores",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44351",
+							"path": [
+								"api",
+								"Stores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add ingredients to store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n  {\r\n    \"name\": \"faina\",\r\n    \"quantity\": 10\r\n  },\r\n  {\r\n  \t\"name\": \"salam\",\r\n    \"quantity\": 10\r\n  }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44351/api/Stores",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44351",
+							"path": [
+								"api",
+								"Stores"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Menus",
+			"item": [
+				{
+					"name": "get all menus",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44351/api/Menus",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44351",
+							"path": [
+								"api",
+								"Menus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add new menu pizza",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"pizza\",\r\n  \"price\": 20,\r\n  \"ingredients\": [\r\n    {\r\n      \"name\": \"faina\",\r\n      \"quantity\": 1\r\n    },\r\n    {\r\n      \"name\": \"salam\",\r\n      \"quantity\": 2\t\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44351/api/Menus",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44351",
+							"path": [
+								"api",
+								"Menus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get menu pizza",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"pizza\",\r\n  \"price\": 20,\r\n  \"ingredients\": [\r\n    {\r\n      \"name\": \"faina\",\r\n      \"quantity\": 1\r\n    },\r\n    {\r\n      \"name\": \"salam\",\r\n      \"quantity\": 2\t\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44351/api/Menus/ab46eda8-5421-4726-a41b-bc79ece45548",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44351",
+							"path": [
+								"api",
+								"Menus",
+								"ab46eda8-5421-4726-a41b-bc79ece45548"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit menu pizza",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"pizza full meat\",\r\n  \"price\": 22.5,\r\n  \"ingredients\": [\r\n    {\r\n      \"name\": \"salam\",\r\n      \"quantity\": 3\r\n    },\r\n    {\r\n    \t\"name\": \"faina\",\r\n    \t\"quantity\": 1\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44351/api/Menus/ab46eda8-5421-4726-a41b-bc79ece45548",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44351",
+							"path": [
+								"api",
+								"Menus",
+								"ab46eda8-5421-4726-a41b-bc79ece45548"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete menu pizza",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:44351/api/Menus/ab46eda8-5421-4726-a41b-bc79ece45548",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44351",
+							"path": [
+								"api",
+								"Menus",
+								"ab46eda8-5421-4726-a41b-bc79ece45548"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Commands",
+			"item": [
+				{
+					"name": "get all commands",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44351/api/Commands",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44351",
+							"path": [
+								"api",
+								"Commands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create command pizza",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"commandMenus\": [\r\n    \"pizza\"\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44351/api/Commands",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44351",
+							"path": [
+								"api",
+								"Commands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all commands pizza",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44351/api/Commands",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44351",
+							"path": [
+								"api",
+								"Commands"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Profits",
+			"item": [
+				{
+					"name": "get year profit",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44351/api/Profits/2020",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44351",
+							"path": [
+								"api",
+								"Profits",
+								"2020"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
